@@ -5,33 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="navbar bg-[#F85559] rounded-[600px]">
-            <div class="flex-1">
+    <header class="container mx-[240px] my-[50px]">
+        <div class="navbar bg-base-100 md:bg-[#F85559] lg:bg-[#F85559] rounded-[600px] lg:w-[1440px] lg:h-[120px] md:w-[1008px] md:h-[84px] w-auto h-auto">
+            <div class="navbar-start">
+                <div class="dropdown ">
+                    <div class=" flex visible md:invisible lg:invisible">
+                        <img src="images/logo.png" alt="">
+                        <a class="btn btn-ghost normal-case text-xl md:text-white lg:text-white font-lato">Fruit Burst</a>
+                       
+                    </div>
+                    
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 md:text-white lg:text-white invisible md:visible lg:visible font-lato">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                  
+                  <ul class="menu menu-horizontal px-1 md:text-white lg:text-white invisible md:visible lg:visible font-lato">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                  
+                  
+            </div>
+            <div class="navbar-center hidden md:flex lg:flex">
                 <img src="images/logo.png" alt="">
-                <a class="btn btn-ghost normal-case text-xl text-white text-[40px] font-lato">Fruit Burst</a>
+                <a class="btn btn-ghost normal-case text-[16px] md:text-[28px] lg:text-[40px] md:text-white lg:text-white font-lato">Fruit Burst</a>
+               
             </div>
-            <div class="flex-none gap-2">
-                <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-[50px]" />
-                </div>
-                
+            <div class="navbar-end md:pr-[30px] lg:pr-[50px] ">
+                <input type="text" placeholder="Search here" class="input input-bordered md:h-[39px] md:w-[280px] lg:h-[56px] lg:w-[400px] rounded-[50px] invisible md:visible lg:visible" />
+                <label tabindex="0" class="btn btn-ghost visible md:invisible lg:invisible">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </label>
             </div>
-        </div>
+          </div>
     </header>
     <main></main>
     <footer></footer>
